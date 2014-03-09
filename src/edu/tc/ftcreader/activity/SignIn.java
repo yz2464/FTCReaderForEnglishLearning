@@ -10,7 +10,7 @@ public class SignIn extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.signin);
+		setContentView(R.layout.activity_signin);
 		
 		// Set password font style to be default
 		ViewUtil.setInputTypeFace((EditText)findViewById(R.id.input_signin_pwd));

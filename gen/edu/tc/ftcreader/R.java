@@ -30,46 +30,51 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080004;
-        public static final int input_signin_email=0x7f080000;
-        public static final int input_signin_pwd=0x7f080001;
-        public static final int input_signup_email=0x7f080002;
-        public static final int input_signup_pwd=0x7f080003;
+        public static final int action_settings=0x7f080007;
+        public static final int input_signin_email=0x7f080001;
+        public static final int input_signin_pwd=0x7f080002;
+        public static final int input_signup_email=0x7f080003;
+        public static final int input_signup_pwd=0x7f080004;
+        public static final int new_brief_headline=0x7f080006;
+        public static final int new_brief_id=0x7f080005;
+        public static final int news_brief_list_view=0x7f080000;
     }
     public static final class layout {
-        public static final int entry=0x7f030000;
-        public static final int signin=0x7f030001;
-        public static final int signup=0x7f030002;
+        public static final int activity_entry=0x7f030000;
+        public static final int activity_news_brief_list=0x7f030001;
+        public static final int activity_signin=0x7f030002;
+        public static final int activity_signup=0x7f030003;
+        public static final int news_brief=0x7f030004;
     }
     public static final class menu {
-        public static final int login=0x7f070000;
-        public static final int main=0x7f070001;
-        public static final int registration=0x7f070002;
+        public static final int main=0x7f070000;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int btn_signin=0x7f050005;
+        public static final int btn_signin=0x7f050006;
         /**  Entry 
          */
-        public static final int btn_signup=0x7f050004;
+        public static final int btn_signup=0x7f050005;
         /**  Registration 
          */
-        public static final int email_hint=0x7f050006;
-        public static final int hello_world=0x7f050008;
-        public static final int pwd_hint=0x7f050007;
+        public static final int email_hint=0x7f050007;
+        public static final int pwd_hint=0x7f050008;
         public static final int title_activity_login=0x7f050003;
+        public static final int title_activity_news_brief_list=0x7f050004;
         public static final int title_activity_registration=0x7f050002;
     }
     public static final class style {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -97,5 +102,9 @@ public final class R {
         /**  Input Style 
          */
         public static final int InputStyle=0x7f060004;
+        /**  List View Style 
+         */
+        public static final int ListViewStyle=0x7f060005;
+        public static final int LoginFormContainer=0x7f060006;
     }
 }

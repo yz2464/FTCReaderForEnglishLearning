@@ -30,6 +30,10 @@
             android:name="edu.tc.ftcreader.activity.SignIn"
             android:label="@string/title_activity_login" >
         </activity>
+        <activity
+            android:name="edu.tc.ftcreader.activity.NewsBriefListActivity"
+            android:label="@string/title_activity_news_brief_list" >
+        </activity>
     </application>
 
 </manifest>

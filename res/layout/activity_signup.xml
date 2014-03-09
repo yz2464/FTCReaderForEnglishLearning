@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,21 +9,22 @@
     android:paddingLeft="@dimen/activity_horizontal_padding"
     android:paddingRight="@dimen/activity_horizontal_padding"
     android:paddingTop="@dimen/activity_vertical_padding"
-    tools:context=".SignIn" >
+    tools:context=".SignUp" >
     	
 	<EditText
-	    android:id="@+id/input_signin_email"
+	    android:id="@+id/input_signup_email"
 	    style="@style/InputStyle"
 	    android:hint="@string/email_hint"
 	    android:inputType="textEmailAddress" />	    	
 
-	<EditText	    
-	    android:id="@+id/input_signin_pwd"
+	<EditText
+	    android:id="@+id/input_signup_pwd"	    
 	    style="@style/InputStyle"
 	    android:hint="@string/pwd_hint"	    
 	    android:inputType="textPassword" />	
 	
-	<Button
+	<Button        
         style="@style/ButtonLarge"        
-        android:text="@string/btn_signin" />	
+        android:text="@string/btn_signup"
+        android:onClick="startNewsBriefListActivity" />	
 </LinearLayout>

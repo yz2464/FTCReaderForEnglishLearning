@@ -11,12 +11,12 @@ public class Entry extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.entry);		
+		setContentView(R.layout.activity_entry);		
 	}
 	
 	/**
 	 * Start sign up activity when the registration button is clicked
-	 * @param view		A reference to the registration button
+	 * @param view		The registration button
 	 */
 	public void startSignUpActivity(View view) {
 		Intent intent = new Intent(this, SignUp.class);	    	    
@@ -25,7 +25,7 @@ public class Entry extends Activity {
 	
 	/**
 	 * Start sign in activity when the login button is clicked
-	 * @param view		A reference to the login button
+	 * @param view		The login button
 	 */
 	public void startSignInActivity(View view) {
 		Intent intent = new Intent(this, SignIn.class);
