@@ -16,15 +16,18 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040003;
+        public static final int activity_horizontal_margin=0x7f040005;
         /**  Default screen paddings, per the Android Design guidelines. 
          */
         public static final int activity_horizontal_padding=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040004;
         public static final int activity_vertical_padding=0x7f040001;
         /**  Header Bottom Padding 
          */
         public static final int header_one_bottom_padding=0x7f040002;
+        /**  List Item Padding 
+         */
+        public static final int list_item_horizontal_padding=0x7f040003;
+        public static final int list_item_vertical_padding=0x7f040004;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -95,16 +98,19 @@ public final class R {
         public static final int AppTheme=0x7f060001;
         /**  Button Large Style 
          */
-        public static final int ButtonLarge=0x7f060003;
+        public static final int ButtonLarge=0x7f060004;
         /**  Header 1 Style 
          */
-        public static final int HeaderOne=0x7f060002;
+        public static final int HeaderOne=0x7f060003;
         /**  Input Style 
          */
-        public static final int InputStyle=0x7f060004;
+        public static final int InputStyle=0x7f060005;
+        /**  Layout with Paddings 
+         */
+        public static final int LayoutWithPaddings=0x7f060002;
         /**  List View Style 
          */
-        public static final int ListViewStyle=0x7f060005;
-        public static final int LoginFormContainer=0x7f060006;
+        public static final int ListItemStyle=0x7f060006;
+        public static final int LoginFormContainer=0x7f060007;
     }
 }

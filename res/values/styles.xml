@@ -17,7 +17,15 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-
+    
+    <!-- Layout with Paddings -->
+    <style name="LayoutWithPaddings" parent="AppBaseTheme">
+        <item name="android:paddingTop">@dimen/activity_vertical_padding</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_padding</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_padding</item>   
+    </style>
+    
     <!-- Header 1 Style -->
     <style name="HeaderOne" parent="@android:style/TextAppearance.Medium">
         <item name="android:layout_width">match_parent</item>
@@ -39,8 +47,12 @@
     </style>
 
     <!-- List View Style -->
-    <style name="ListViewStyle" parent="@android:style/TextAppearance.Small">
+    <style name="ListItemStyle" parent="@android:style/TextAppearance.Small">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">@dimen/list_item_vertical_padding</item>
+		<item name="android:paddingRight">@dimen/list_item_horizontal_padding</item>
+        <item name="android:paddingBottom">@dimen/list_item_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/list_item_horizontal_padding</item>              
     </style>       
 </resources>

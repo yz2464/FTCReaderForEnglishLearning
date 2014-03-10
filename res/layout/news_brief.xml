@@ -12,5 +12,5 @@
     
     <TextView 
         android:id="@+id/new_brief_headline"
-        style="@style/ListViewStyle" />   
+        style="@style/ListItemStyle" />   
 </LinearLayout>
