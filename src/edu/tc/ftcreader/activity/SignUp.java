@@ -19,7 +19,7 @@ public class SignUp extends Activity {
 	}
 
 	public void startNewsBriefListActivity(View view) {
-		Intent intent = new Intent(this, NewsBriefListActivity.class);
+		Intent intent = new Intent(this, NewsBriefList.class);
 		startActivity(intent);
 	}
 }
