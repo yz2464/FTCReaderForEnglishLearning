@@ -29,9 +29,9 @@ public class NewsBriefListLoader extends AsyncTaskLoader<List<NewsBrief>>  {
 	@Override
 	public List<NewsBrief> loadInBackground() {
 		List<NewsBrief> newsBriefList = new ArrayList<NewsBrief>();
-		// Sample request URL: 
+		
+		// Sample request URL for news brief list
 		// https://api.pearson.com/v2/ft/articles?country=china&article_date=%5B2014-01-01+TO+2014-01-15%5D&apikey=w7q8yrNGEZD25x4Ty8Ge8oewGSpTjuHP
-		String url = "https://api.pearson.com/v2/ft/articles";
 		
 		// Set request parameters
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
@@ -41,8 +41,8 @@ public class NewsBriefListLoader extends AsyncTaskLoader<List<NewsBrief>>  {
 		
 		long before = System.currentTimeMillis();
 		// Make get request
-		HttpHandler httpHandler = new HttpHandler();
-		String jsonResponseStr = httpHandler.makeGetHttpCall(url, params);
+		HttpHandler httpHandler = new HttpHandler();		
+		String jsonResponseStr = httpHandler.makeGetHttpCall(GlobalVariable.FT_URL, params);
 		long after = System.currentTimeMillis();
 		long result = after - before;
 		Log.d("HTTP request time: ", String.valueOf(result));

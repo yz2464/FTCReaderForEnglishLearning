@@ -48,6 +48,10 @@ public class NewsBrief {
 		return dateTime;
 	}
 	
+	public String getDateTimeString() {
+		return dateTime.toString();
+	}
+	
 	public void setDateTime(Date dateTime) {
 		this.dateTime = dateTime;
 	}	

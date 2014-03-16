@@ -14,7 +14,7 @@ public class NewsBriefListResponse {
 	private int status; // status of HTTP request
 	private int count; // the number of news returned 
 	private int total; // the total number of news 
-	private List<NewsBrief> newsBriefList;
+	private List<NewsBrief> newsBriefList; // a list of news briefs
 	
 	public NewsBriefListResponse() {
 		this.status = GlobalVariable.DEFAULT_INT;

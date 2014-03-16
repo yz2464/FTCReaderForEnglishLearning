@@ -1,6 +1,8 @@
 package edu.tc.ftcreader.entity;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Article class containing all information of a piece of news
@@ -9,14 +11,19 @@ import java.util.Date;
  */
 public class News {	
 	private NewsBrief newsBrief; // a newsBrief object
-	private String[] text; // text of the news	
+	private List<String> text; // text of the news	
 	
-	public News(NewsBrief newsBrief, String[] text) {		
+	public News() {
+		this.newsBrief = new NewsBrief();
+		this.text = new ArrayList<String>();
+	}
+	
+	public News(NewsBrief newsBrief, List<String> text) {		
 		this.newsBrief = newsBrief;
 		this.text = text;
 	}
 	
-	public News(String id, String headline, Date dateTime, String[] text) {
+	public News(String id, String headline, Date dateTime, List<String> text) {
 		this.newsBrief = new NewsBrief(id, headline, dateTime);
 		this.text = text;
 	}
@@ -29,12 +36,20 @@ public class News {
 		this.newsBrief = newsBrief;
 	}
 	
-	public String[] getText() {
+	public List<String> getText() {
 		return text;
 	}
 	
-	public void setText(String[] text) {
-		this.text = text;
+	public String getTextString() {
+		StringBuilder sb = new StringBuilder();
+		String lineBreak = "\n";
+		for (int i = 0; i < text.size(); i ++) {
+			sb.append(text.get(i)).append(lineBreak);
+		}
+		return sb.toString();
 	}
 	
+	public void setText(List<String> text) {
+		this.text = text;
+	}	
 }

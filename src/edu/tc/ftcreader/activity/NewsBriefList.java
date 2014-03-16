@@ -36,6 +36,7 @@ public class NewsBriefList extends FragmentActivity implements LoaderManager.Loa
 		
 	@Override
 	public Loader<List<NewsBrief>> onCreateLoader(int id, Bundle args) {
+		// Create news brief list loader
 		NewsBriefListLoader loader = new NewsBriefListLoader(this);
 		return loader;
 	}

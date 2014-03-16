@@ -86,7 +86,7 @@ public class HttpHandler {
 		String response = "";
 		String paramStr = URLEncodedUtils.format(params, "utf-8");
 		
-		try {							
+		try {										
 			url = new URL(urlStr + "?" + paramStr);
 			Log.d("URL: ", url.toString());
 			connection = (HttpURLConnection) url.openConnection();
