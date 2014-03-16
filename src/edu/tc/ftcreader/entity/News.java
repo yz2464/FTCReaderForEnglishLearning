@@ -42,7 +42,7 @@ public class News {
 	
 	public String getTextString() {
 		StringBuilder sb = new StringBuilder();
-		String lineBreak = "\n";
+		String lineBreak = "\n\n";
 		for (int i = 0; i < text.size(); i ++) {
 			sb.append(text.get(i)).append(lineBreak);
 		}

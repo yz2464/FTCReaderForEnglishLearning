@@ -34,6 +34,21 @@
         <item name="android:gravity">center</item>
         <item name="android:paddingBottom">@dimen/header_one_bottom_padding</item>
     </style>
+    
+    <!-- News Headline Style -->
+    <style name="NewsHeadline" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:paddingBottom">@dimen/news_headline_bottom_padding</item>
+    </style>
+    
+    <!-- News Date Time Style -->
+    <style name="NewsDateTime" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:paddingBottom">@dimen/news_date_time_bottom_padding</item>
+        <item name="android:textSize">@dimen/news_date_time_size</item>
+    </style>
 
     <!-- Button Large Style -->
     <style name="ButtonLarge" parent="@android:style/TextAppearance.Small">
@@ -44,7 +59,12 @@
     <!-- Default Text Style -->
     <style name="DefaultTextStyle" parent="@android:style/TextAppearance.Small">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>              
+    </style>
+    
+    <!-- News Text Style -->
+    <style name="NewsTextStyle" parent="DefaultTextStyle">        
+        <item name="android:lineSpacingMultiplier">1.3</item>    
     </style>
 
     <!-- List View Style -->

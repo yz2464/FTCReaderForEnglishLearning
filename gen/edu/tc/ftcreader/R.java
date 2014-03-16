@@ -888,19 +888,26 @@ containing a value of this type.
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f080016;
+        public static final int activity_horizontal_margin=0x7f080018;
         /**  Default screen paddings, per the Android Design guidelines. 
          */
         public static final int activity_horizontal_padding=0x7f080011;
-        public static final int activity_vertical_margin=0x7f080017;
+        public static final int activity_vertical_margin=0x7f080019;
         public static final int activity_vertical_padding=0x7f080012;
-        /**  Header Bottom Padding 
+        /**  Header Bottom Paddings 
          */
         public static final int header_one_bottom_padding=0x7f080013;
-        /**  List Item Padding 
+        /**  List Item Paddings 
          */
-        public static final int list_item_horizontal_padding=0x7f080014;
-        public static final int list_item_vertical_padding=0x7f080015;
+        public static final int list_item_horizontal_padding=0x7f080016;
+        public static final int list_item_vertical_padding=0x7f080017;
+        public static final int news_date_time_bottom_padding=0x7f080015;
+        /**  Font Sizes 
+         */
+        public static final int news_date_time_size=0x7f08001a;
+        /**  News Paddings 
+         */
+        public static final int news_headline_bottom_padding=0x7f080014;
     }
     public static final class drawable {
         public static final int abc_ab_bottom_solid_dark_holo=0x7f020000;
@@ -1224,10 +1231,10 @@ containing a value of this type.
         public static final int AppTheme=0x7f0b0084;
         /**  Button Large Style 
          */
-        public static final int ButtonLarge=0x7f0b0087;
+        public static final int ButtonLarge=0x7f0b0089;
         /**  Default Text Style 
          */
-        public static final int DefaultTextStyle=0x7f0b0088;
+        public static final int DefaultTextStyle=0x7f0b008a;
         /**  Header 1 Style 
          */
         public static final int HeaderOne=0x7f0b0086;
@@ -1236,8 +1243,17 @@ containing a value of this type.
         public static final int LayoutWithPaddings=0x7f0b0085;
         /**  List View Style 
          */
-        public static final int ListItemStyle=0x7f0b0089;
-        public static final int LoginFormContainer=0x7f0b008a;
+        public static final int ListItemStyle=0x7f0b008c;
+        public static final int LoginFormContainer=0x7f0b008d;
+        /**  News Date Time Style 
+         */
+        public static final int NewsDateTime=0x7f0b0088;
+        /**  News Headline Style 
+         */
+        public static final int NewsHeadline=0x7f0b0087;
+        /**  News Text Style 
+         */
+        public static final int NewsTextStyle=0x7f0b008b;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;

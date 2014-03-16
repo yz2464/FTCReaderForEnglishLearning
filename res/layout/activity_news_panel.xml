@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/LayoutWithPaddings"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"    
-    android:orientation="vertical" 
-    tools:context=".NewsPanel" >
-    
-    <TextView 
-        android:id="@+id/news_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone" />
-
-	<TextView
-	    android:id="@+id/news_headline"
-        style="@style/HeaderOne" />  	
-        
-	<TextView
-	    android:id="@+id/news_date_time"
-        style="@style/DefaultTextStyle" />
-
-	<TextView
-	    android:id="@+id/news_text"
-        style="@style/DefaultTextStyle" />			
-</LinearLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	tools:context=".NewsPanel"
+	>    
+	<LinearLayout     
+	    style="@style/LayoutWithPaddings"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"    
+	    android:orientation="vertical"     
+	     >	
+	    <TextView 
+	        android:id="@+id/news_id"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone" />
+	
+		<TextView
+		    android:id="@+id/news_headline"
+	        style="@style/NewsHeadline" />  	
+	        
+		<TextView
+		    android:id="@+id/news_date_time"
+	        style="@style/NewsDateTime" />
+	
+		<TextView
+		    android:id="@+id/news_text"
+	        style="@style/NewsTextStyle" />	
+	</LinearLayout>
+</ScrollView>		

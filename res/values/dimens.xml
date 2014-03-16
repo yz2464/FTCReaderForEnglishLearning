@@ -5,13 +5,19 @@
     <dimen name="activity_horizontal_padding">16dp</dimen>
     <dimen name="activity_vertical_padding">16dp</dimen>
 
-    <!-- Header Bottom Padding -->
+    <!-- Header Bottom Paddings -->
     <dimen name="header_one_bottom_padding">16dp</dimen>
+    
+    <!-- News Paddings -->
+    <dimen name="news_headline_bottom_padding">4dp</dimen>
+    <dimen name="news_date_time_bottom_padding">16dp</dimen>    
 
-    <!-- List Item Padding -->
-    <dimen name="list_item_horizontal_padding">16dp</dimen>
-    <dimen name="list_item_vertical_padding">16dp</dimen>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-
+    <!-- List Item Paddings -->
+    <dimen name="list_item_horizontal_padding">8dp</dimen>
+    <dimen name="list_item_vertical_padding">8dp</dimen>
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    
+    <!-- Font Sizes -->    
+	<dimen name="news_date_time_size">10sp</dimen>	
 </resources>
