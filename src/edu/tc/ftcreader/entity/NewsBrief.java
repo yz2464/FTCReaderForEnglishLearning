@@ -4,23 +4,21 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import edu.tc.ftcreader.connectivity.JsonParser;
+import edu.tc.ftcreader.connectivity.GlobalVariable;
 
 /**
  * A class containing brief news information
  * @author Yuan
  *
  */
-public class NewsBrief {
-	private final static String DEFAULT_STRING = "";
-	
+public class NewsBrief {		
 	private String id; // news id
 	private String headline; // news headline
 	private Date dateTime; // news date
 		
 	public NewsBrief() {
-		this.id = DEFAULT_STRING;
-		this.headline = DEFAULT_STRING;
+		this.id = GlobalVariable.DEFAULT_STRING;
+		this.headline = GlobalVariable.DEFAULT_STRING;
 		this.dateTime = new Date();		
 	}
 	
@@ -56,9 +54,9 @@ public class NewsBrief {
 	
 	public Map<String, String> getNewsBriefInMap() {		
 		Map<String, String> map = new HashMap<String, String>();
-		map.put(JsonParser.KEY_ID, id);
-		map.put(JsonParser.KEY_HEADLINE, headline);
-		map.put(JsonParser.KEY_DATE, dateTime.toString());
+		map.put(GlobalVariable.KEY_ID, id);
+		map.put(GlobalVariable.KEY_HEADLINE, headline);
+		map.put(GlobalVariable.KEY_DATE, dateTime.toString());
 		
 		return map;
 	}

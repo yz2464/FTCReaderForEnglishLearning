@@ -18,12 +18,7 @@ import edu.tc.ftcreader.entity.NewsBriefListResponse;
  * @author Yuan
  *
  */
-public class NewsBriefListLoader extends AsyncTaskLoader<List<NewsBrief>>  {
-	final static String KEY_APIKEY = "apikey";
-	final static String KEY_COUNTRY = "country";
-	final static String KEY_ARTICLE_DATE = "article_date";
-	
-	final static String VALUE_APIKEY = "w7q8yrNGEZD25x4Ty8Ge8oewGSpTjuHP";
+public class NewsBriefListLoader extends AsyncTaskLoader<List<NewsBrief>>  {	
 	final static String VALUE_COUNTRY = "china";
 	final static String VALUE_ARTICLE_DATE = "[2014-01-15 TO 2014-01-18]";
 	
@@ -40,9 +35,9 @@ public class NewsBriefListLoader extends AsyncTaskLoader<List<NewsBrief>>  {
 		
 		// Set request parameters
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
-		params.add(new BasicNameValuePair(KEY_APIKEY, VALUE_APIKEY));
-		params.add(new BasicNameValuePair(KEY_COUNTRY, VALUE_COUNTRY));
-		params.add(new BasicNameValuePair(KEY_ARTICLE_DATE, VALUE_ARTICLE_DATE));
+		params.add(new BasicNameValuePair(GlobalVariable.KEY_APIKEY, GlobalVariable.VALUE_APIKEY));
+		params.add(new BasicNameValuePair(GlobalVariable.KEY_COUNTRY, VALUE_COUNTRY));
+		params.add(new BasicNameValuePair(GlobalVariable.KEY_ARTICLE_DATE, VALUE_ARTICLE_DATE));
 		
 		long before = System.currentTimeMillis();
 		// Make get request

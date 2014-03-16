@@ -3,22 +3,23 @@ package edu.tc.ftcreader.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.tc.ftcreader.connectivity.GlobalVariable;
+
 /**
  * A class representing HTTP response of a list of news briefs
  * @author Yuan
  *
  */
-public class NewsBriefListResponse {
-	private final static int DEFAULT_INT = -1;
+public class NewsBriefListResponse {	
 	private int status; // status of HTTP request
 	private int count; // the number of news returned 
 	private int total; // the total number of news 
 	private List<NewsBrief> newsBriefList;
 	
 	public NewsBriefListResponse() {
-		this.status = DEFAULT_INT;
-		this.count = DEFAULT_INT;
-		this.total = DEFAULT_INT;
+		this.status = GlobalVariable.DEFAULT_INT;
+		this.count = GlobalVariable.DEFAULT_INT;
+		this.total = GlobalVariable.DEFAULT_INT;
 		this.newsBriefList = new ArrayList<NewsBrief>();
 	}
 	

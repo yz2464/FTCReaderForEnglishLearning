@@ -17,8 +17,8 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import edu.tc.ftcreader.R;
+import edu.tc.ftcreader.connectivity.GlobalVariable;
 import edu.tc.ftcreader.connectivity.NewsBriefListLoader;
-import edu.tc.ftcreader.connectivity.JsonParser;
 import edu.tc.ftcreader.entity.NewsBrief;
 
 public class NewsBriefList extends FragmentActivity implements LoaderManager.LoaderCallbacks<List<NewsBrief>> {						
@@ -77,7 +77,7 @@ public class NewsBriefList extends FragmentActivity implements LoaderManager.Loa
 		// Initialize adaptor to inflate news briefs
 		SimpleAdapter simpleAdapter = new SimpleAdapter(
 				this, newsBriefList, R.layout.news_brief, 
-				new String[] { JsonParser.KEY_ID, JsonParser.KEY_HEADLINE }, 
+				new String[] { GlobalVariable.KEY_ID, GlobalVariable.KEY_HEADLINE }, 
 				new int[] { R.id.news_brief_id, R.id.news_brief_headline });
 		
 		// Inflate list view for news briefs
@@ -96,7 +96,7 @@ public class NewsBriefList extends FragmentActivity implements LoaderManager.Loa
 				
 				// Start News activity and display the selected news				
 				Intent intent = new Intent(NewsBriefList.this, NewsPanel.class);
-				intent.putExtra(JsonParser.KEY_ID, newsId);
+				intent.putExtra(GlobalVariable.KEY_ID, newsId);
 				startActivity(intent);				
 			}
         });
