@@ -9,15 +9,16 @@
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
+   
     </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->             
     </style>
-    
+       
     <!-- Layout with Paddings -->
     <style name="LayoutWithPaddings" parent="AppBaseTheme">
         <item name="android:paddingTop">@dimen/activity_vertical_padding</item>
@@ -40,8 +41,8 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <!-- Input Style -->
-    <style name="InputStyle" parent="@android:style/TextAppearance.Small">
+    <!-- Default Text Style -->
+    <style name="DefaultTextStyle" parent="@android:style/TextAppearance.Small">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_my_key"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_important"
+        android:title="@string/action_my_key" />
+    
+    <item
+        android:id="@+id/action_bookmark"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_favorite"
+        android:title="@string/action_bookmark" />
+    
+    <item
+        android:id="@+id/action_shared_key"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_important"
+        android:title="@string/action_shared_key" />
+    
+    <item
+        android:id="@+id/action_brightness"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_brightness_medium"
+        android:title="@string/action_brightness" />
+</menu>

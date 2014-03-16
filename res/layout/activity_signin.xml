@@ -10,13 +10,13 @@
     	
 	<EditText
 	    android:id="@+id/input_signin_email"
-	    style="@style/InputStyle"
+	    style="@style/DefaultTextStyle"
 	    android:hint="@string/email_hint"
 	    android:inputType="textEmailAddress" />	    	
 
 	<EditText	    
 	    android:id="@+id/input_signin_pwd"
-	    style="@style/InputStyle"
+	    style="@style/DefaultTextStyle"
 	    android:hint="@string/pwd_hint"	    
 	    android:inputType="textPassword" />	
 	

@@ -7,8 +7,11 @@
 
     <!-- Header Bottom Padding -->
     <dimen name="header_one_bottom_padding">16dp</dimen>
-    
+
     <!-- List Item Padding -->
     <dimen name="list_item_horizontal_padding">16dp</dimen>
     <dimen name="list_item_vertical_padding">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
 </resources>

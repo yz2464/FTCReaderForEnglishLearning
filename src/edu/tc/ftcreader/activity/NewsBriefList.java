@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.LoaderManager;
@@ -77,7 +78,7 @@ public class NewsBriefList extends FragmentActivity implements LoaderManager.Loa
 		SimpleAdapter simpleAdapter = new SimpleAdapter(
 				this, newsBriefList, R.layout.news_brief, 
 				new String[] { JsonParser.KEY_ID, JsonParser.KEY_HEADLINE }, 
-				new int[] { R.id.new_brief_id, R.id.new_brief_headline });
+				new int[] { R.id.news_brief_id, R.id.news_brief_headline });
 		
 		// Inflate list view for news briefs
 		ListView newsBriefListView = (ListView) findViewById(R.id.news_brief_list_view);
@@ -91,16 +92,13 @@ public class NewsBriefList extends FragmentActivity implements LoaderManager.Loa
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				// Get the id of the selected news article
-				String articleId = ((TextView) view.findViewById(R.id.new_brief_id)).getText().toString();
+				String articleId = ((TextView) view.findViewById(R.id.news_brief_id)).getText().toString();
 				
-				// Start NewsArticle activity and display the selected new article
-				/*
-				Intent intent = new Intent(this, NewsArticle.class);
-				intent.putExtra(KEY_ID, articleId);
-				startActivity(intent);
-				*/
+				// Start NewsArticle activity and display the selected new article				
+				Intent intent = new Intent(NewsBriefList.this, NewsPanel.class);
+				intent.putExtra(JsonParser.KEY_ID, articleId);
+				startActivity(intent);				
 			}
-
         });
 	}
 }
