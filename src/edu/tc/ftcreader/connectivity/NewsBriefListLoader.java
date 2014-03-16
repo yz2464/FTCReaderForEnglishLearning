@@ -13,6 +13,11 @@ import android.util.Log;
 import edu.tc.ftcreader.entity.NewsBrief;
 import edu.tc.ftcreader.entity.NewsBriefListResponse;
 
+/**
+ * Loader to load news brief list asynchronously 
+ * @author Yuan
+ *
+ */
 public class NewsBriefListLoader extends AsyncTaskLoader<List<NewsBrief>>  {
 	final static String KEY_APIKEY = "apikey";
 	final static String KEY_COUNTRY = "country";

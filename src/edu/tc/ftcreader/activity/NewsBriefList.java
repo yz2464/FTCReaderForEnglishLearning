@@ -30,7 +30,7 @@ public class NewsBriefList extends FragmentActivity implements LoaderManager.Loa
 		before = System.currentTimeMillis();
 		setContentView(R.layout.activity_news_brief_list);
 				
-		// Get news headlines from FT		
+		// Initiate loader to load news brief list
 		getSupportLoaderManager().initLoader(0, null, this).forceLoad();												
 	}
 		
