@@ -17,7 +17,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import edu.tc.ftcreader.R;
-import edu.tc.ftcreader.connectivity.DataLoader;
+import edu.tc.ftcreader.connectivity.NewsBriefListLoader;
 import edu.tc.ftcreader.connectivity.JsonParser;
 import edu.tc.ftcreader.entity.NewsBrief;
 
@@ -36,7 +36,7 @@ public class NewsBriefList extends FragmentActivity implements LoaderManager.Loa
 		
 	@Override
 	public Loader<List<NewsBrief>> onCreateLoader(int id, Bundle args) {
-		DataLoader loader = new DataLoader(this);
+		NewsBriefListLoader loader = new NewsBriefListLoader(this);
 		return loader;
 	}
 

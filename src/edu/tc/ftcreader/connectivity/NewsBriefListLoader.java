@@ -13,7 +13,7 @@ import android.util.Log;
 import edu.tc.ftcreader.entity.NewsBrief;
 import edu.tc.ftcreader.entity.NewsBriefListResponse;
 
-public class DataLoader extends AsyncTaskLoader<List<NewsBrief>>  {
+public class NewsBriefListLoader extends AsyncTaskLoader<List<NewsBrief>>  {
 	final static String KEY_APIKEY = "apikey";
 	final static String KEY_COUNTRY = "country";
 	final static String KEY_ARTICLE_DATE = "article_date";
@@ -22,7 +22,7 @@ public class DataLoader extends AsyncTaskLoader<List<NewsBrief>>  {
 	final static String VALUE_COUNTRY = "china";
 	final static String VALUE_ARTICLE_DATE = "[2014-01-15 TO 2014-01-18]";
 	
-	public DataLoader(Context context) {
+	public NewsBriefListLoader(Context context) {
 		super(context);
 	}	
 
