@@ -91,12 +91,12 @@ public class NewsBriefList extends FragmentActivity implements LoaderManager.Loa
 		newsBriefListView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				// Get the id of the selected news article
-				String articleId = ((TextView) view.findViewById(R.id.news_brief_id)).getText().toString();
+				// Get the id of the selected news
+				String newsId = ((TextView) view.findViewById(R.id.news_brief_id)).getText().toString();
 				
-				// Start NewsArticle activity and display the selected new article				
+				// Start News activity and display the selected news				
 				Intent intent = new Intent(NewsBriefList.this, NewsPanel.class);
-				intent.putExtra(JsonParser.KEY_ID, articleId);
+				intent.putExtra(JsonParser.KEY_ID, newsId);
 				startActivity(intent);				
 			}
         });
